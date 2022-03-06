@@ -2,9 +2,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "kotlin Multiplatform",
+    name: "kotlinmultiplatformsharedmodule",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v13)
     ],
     products: [
         .library(
@@ -14,9 +14,8 @@ let package = Package(
     ],
     targets: [
         .binaryTarget(
-            name: "build.zip",
-            url: "https://github.com/vivek-modi/KotlinMultiplatform/blob/master/build.zip",
-            checksum: "13e364bb6e5177d119850e1c155d7126>"
+            name: "kotlinmultiplatformsharedmodule",
+            path: "./kotlinmultiplatformsharedmodule.xcframework"
         ),
     ]
 )
