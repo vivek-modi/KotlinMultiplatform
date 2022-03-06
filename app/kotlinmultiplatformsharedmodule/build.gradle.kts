@@ -13,11 +13,11 @@ kotlin {
         targetPlatforms {
             iOS { v("13") }
         }
-        outputDirectory(File("../app/"))
+        outputDirectory(File(projectDir, "/"))
     }
 
     android()
-    
+
     val xcf = XCFramework()
     listOf(
         iosX64(),
